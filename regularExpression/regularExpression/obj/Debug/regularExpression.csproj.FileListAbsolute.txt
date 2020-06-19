@@ -1,0 +1,6 @@
+c:\users\haris\documents\visual studio 2013\Projects\regularExpression\regularExpression\bin\Debug\regularExpression.exe.config
+C:\Users\Haris\Documents\Visual Studio 2013\Projects\regularExpression\regularExpression\bin\Debug\regularExpression.exe
+C:\Users\Haris\Documents\Visual Studio 2013\Projects\regularExpression\regularExpression\bin\Debug\regularExpression.pdb
+C:\Users\Haris\Documents\Visual Studio 2013\Projects\regularExpression\regularExpression\obj\Debug\regularExpression.csprojResolveAssemblyReference.cache
+C:\Users\Haris\Documents\Visual Studio 2013\Projects\regularExpression\regularExpression\obj\Debug\regularExpression.exe
+C:\Users\Haris\Documents\Visual Studio 2013\Projects\regularExpression\regularExpression\obj\Debug\regularExpression.pdb

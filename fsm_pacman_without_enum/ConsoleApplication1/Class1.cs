@@ -1,0 +1,88 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    public class Mario {  
+    enum internalState {  
+        SmallMario,  
+        SuperMario,  
+        FireMario,  
+        CapeMario  
+    }  
+  
+    public int LifeCount { get; private set; }  
+    public int CoinCount { get; private set; }  
+    private internalState State { get; set; }  
+  
+    public Mario() {  
+        LifeCount = 1;  
+        CoinCount = 0;  
+        State = internalState.SmallMario;  
+    }  
+  
+    public void GotMushroom() {  
+        Console.WriteLine("Got Mushroom!");  
+        if (State == internalState.SmallMario)  
+            State = internalState.SuperMario;  
+  
+       // GotCoins(100);  
+    }  
+  
+    public void GotFireFlower() {  
+        Console.WriteLine("Got FireFlower!");  
+        State = internalState.FireMario;  
+      //  GotCoins(200);  
+    }  
+  
+    public void GotFeather() {  
+        Console.WriteLine("Got Feather!");  
+        State = internalState.CapeMario;  
+        //GotCoins(300);  
+    }  
+  /*
+    public void GotCoins(int numberOfCoins) {  
+        WriteLine($"Got {numberOfCoins} Coin(s)!");  
+        CoinCount += numberOfCoins;  
+        if (CoinCount >= 5000)  
+        {  
+            GotLife();  
+            CoinCount -= 5000;  
+        }  
+    }  
+  
+    private void GotLife() {  
+        WriteLine("Got Life!");  
+        LifeCount += 1;  
+    }  
+  
+    private void LostLife() {  
+        WriteLine("Lost Life!");  
+        LifeCount -= 1;  
+        if (LifeCount <= 0)  
+            GameOver();  
+    }  
+  
+    public void MetMonster() {  
+        WriteLine("Met Monster!");  
+        if (State == internalState.SmallMario)  
+            LostLife();  
+        else  
+            State = internalState.SmallMario;  
+    }  
+  */
+    public void GameOver() {  
+        LifeCount = 0;  
+        CoinCount = 0;  
+        Console.WriteLine("Game Over!");  
+    }  
+  /*
+    public override string ToString() {  
+        return $"State: {State} | LifeCount: {LifeCount} | CoinsCount: {CoinCount} \n";  
+    }
+   */
+}  
+}
